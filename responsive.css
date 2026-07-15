@@ -1,0 +1,41 @@
+@media (max-width: 900px) {
+  .hero { grid-template-columns:1fr; min-height:auto; }
+  .hero-side { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .grid-3 { grid-template-columns:1fr; }
+  .quiz-layout { grid-template-columns:1fr; }
+  .quiz-sidebar { position:static; display:grid; grid-template-columns:140px 1fr; align-items:center; }
+  .domain-list { margin:0; }
+  .report-header { grid-template-columns:1fr; }
+  .radar-card { max-width:420px; }
+}
+
+@media (max-width: 680px) {
+  .header-inner { padding:9px 16px; }
+  .brand-copy small, .autosave-status, #clearDataHeader { display:none; }
+  .app-shell { padding:24px 14px 54px; }
+  .hero { border-radius:20px; padding:30px 22px; }
+  .hero-side { grid-template-columns:1fr; }
+  .hero h1 { font-size:2.35rem; }
+  .grid-2, .form-grid, .choice-grid, .service-grid { grid-template-columns:1fr; }
+  .field-full { grid-column:auto; }
+  .form-card { padding:20px 16px; }
+  .quiz-sidebar { grid-template-columns:1fr; }
+  .progress-ring { width:104px; height:104px; }
+  .progress-ring::before { width:78px; height:78px; }
+  .domain-list { display:flex; overflow:auto; padding-bottom:6px; }
+  .domain-list li { flex:0 0 auto; }
+  .question-card { padding:25px 18px; }
+  .question-topline { align-items:flex-start; }
+  .quiz-actions, .form-actions { align-items:stretch; }
+  .quiz-actions > *, .quiz-actions-group, .quiz-actions-group .btn, .form-actions .btn { width:100%; }
+  .domain-row { grid-template-columns:1fr 48px; }
+  .domain-row .bar { grid-column:1/-1; grid-row:2; }
+  .priority-card { grid-template-columns:40px 1fr; }
+  .priority-score { grid-column:2; }
+  .report-actions .btn { flex:1 1 100%; }
+  .site-footer > div { display:grid; }
+}
+
+@media (max-width: 900px) { .domain-preview { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width: 680px) { .domain-preview { grid-template-columns:1fr; } .report-title p { font-size:.92rem; overflow-wrap:anywhere; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior:auto!important; transition:none!important; animation:none!important; } }

@@ -1,0 +1,13 @@
+@media print {
+  body { background:#fff; }
+  .site-header, .site-footer, .report-actions, .btn, .text-button, .toast { display:none !important; }
+  .app-shell { max-width:none; padding:0; }
+  .card, .score-card, .radar-card, .priority-card, .service-card { box-shadow:none; break-inside:avoid; }
+  .section { break-inside:avoid; }
+  .score-card { print-color-adjust:exact; -webkit-print-color-adjust:exact; }
+}
+@media print {
+  .submission-status, .report-meta { break-inside:avoid; }
+  .report-title::after { content:"健檢編號：" attr(data-assessment-id); display:block; font-size:9pt; color:#666; }
+  @page { margin:14mm; }
+}
